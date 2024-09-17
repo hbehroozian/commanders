@@ -45,6 +45,7 @@ public class InterviewQ_CharSeq {
 
         // go through the string char by char
         for (char c : str.toCharArray()) {
+            System.out.println(c);
 //            if(c == ' '){
 //                continue;
 //            }
