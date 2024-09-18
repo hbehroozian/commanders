@@ -19,12 +19,23 @@ public class Product {
     // what is a constructor? it's used to create objects of the class
     // constructors typically initialize all variables of the class
     public Product(){
+        super();
         this.name = "";
         this.price = 0;
         this.category = "";
         this.color = new Color(0,0,0);
         this.model = "";
         this.sku = "";
+    }
+
+    // constructor chaining: to call another constructor at the start of this constructor
+    // it must be the first line of your constructor
+    // so - it can be either one constructor from the current class
+    // or one from the parent class
+
+    public Product(String name){
+        this();
+        this.name = name;
     }
 
     public Product(String name, double price, String category, Color color, String model, String sku){
@@ -49,7 +60,7 @@ public class Product {
         Product obj3 = new Product();
 
 
-        System.out.println(obj1.getName());
+        System.out.println(obj1.getName().length());
 
         obj1.name = "TV 65 inch Samsung";
         obj1.model = "";
@@ -58,9 +69,10 @@ public class Product {
 
         System.out.println(obj1.getName());
 
-        Product obj4 = new Product("iPhone", 899.99, "Electronics", Color.GRAY, "+ 16inch + 256 GB", "jh123iouas89");
-
-        System.out.println(obj4.name + " " + obj4.sku);
+//        Product obj4 = new Product("15"  , 899.99, "Electronics", Color.GRAY, "+ 16inch + 256 GB", "jh123iouas89");
+//
+//        Product obj5 = new Product("TV");
+//        System.out.println(obj4.name + " " + obj4.sku);
 
 
     }
