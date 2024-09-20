@@ -2,7 +2,7 @@ package Sep17;
 
 import java.util.ArrayList;
 
-public class Book extends Object{
+public class Book{
 
     // create your variables
     private String title;
@@ -62,9 +62,9 @@ public class Book extends Object{
         this.isbn = isbn;
     }
 
-    public void setAuthors(ArrayList<String> authors) {
-        this.authors = authors;
-    }
+//    public void setAuthors(ArrayList<String> authors) {
+//        this.authors = authors;
+//    }
     // toString: to represent this object in String format
 
 

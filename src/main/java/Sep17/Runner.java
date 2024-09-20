@@ -6,7 +6,7 @@ public class Runner {
 
         Book obj1 = new Book("Harry Potter and the Philosopher's Stone", "J. K. Rowling", "978-0-7475-3269-9");
         System.out.println(obj1);
-
+        obj1.getAuthors().add("someone");
         System.out.println(obj1.getTitle());
         obj1.setIsbn("32135as1d5a1s5d");
         System.out.println(obj1);
